@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["robz.del.castillo@gmail.com"]
   spec.description   = "A lotto gem just for fun!"
   spec.summary       = "A lotto gem"
-  spec.homepage      = ""
+  spec.homepage      = "https://rubygems.org/gems/rdc_lotto"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
