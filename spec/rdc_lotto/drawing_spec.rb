@@ -9,8 +9,8 @@ module RdcLotto
   			expect(draw).to be_a(Array)
   		end
 
-  		it "returns an array with 5 elements" do
-  			expect(draw.size).to eq(5)
+  		it "returns an array with 10 elements" do
+  			expect(draw.size).to eq(10)
   		end
 
   		it "each element is integer" do

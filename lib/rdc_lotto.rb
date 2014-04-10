@@ -1,15 +1,17 @@
 require "rdc_lotto/version"
+require "rdc_lotto/configuration"
+require "rdc_lotto/drawing"
 
 module RdcLotto
-  class Drawing
-  	def draw
-  		5.times.map { draw_number }
-  	end
+	class << self
+		attr_writer :configuration 
+	end
 
-  	private
+	def self.configuration
+		@configuration ||= Configuration.new
+	end
 
-  	def draw_number
-  		rand(0..60)
-  	end
-  end
+	def self.configure
+		yield(configuration)
+	end
 end
