@@ -1,6 +1,6 @@
 # RdcLotto
 
-TODO: Write a gem description
+Just a lotto
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+config = RdcLotto::Configuration.new 
+config.drawing_count = 6   # set total of numbers to draw, default is 10
+RdcLotto::Drawing.new(config).draw # => [1,2,3,4,5,6]
 
 ## Contributing
 
